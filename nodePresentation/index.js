@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
 
 const sqlite3router=require("./endPoints/sqlite3endPoints");
 
-const mySqlrouter=require("./endPoints/mySqlEndPoints");
+const mySqlrouter=require("./endPoints/mySQLendPoints.js");
 
 app.use('/', sqlite3router);
 app.use("/",mySqlrouter);
