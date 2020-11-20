@@ -1,0 +1,6 @@
+mkdir nodePresentation
+cd nodePresenation
+npm init
+npm install express
+npm install sqlite3
+npm install --save body-parser   # in order to be able to parse post body params as JSON
