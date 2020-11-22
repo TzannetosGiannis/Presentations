@@ -4,12 +4,13 @@ var mysql = require('mysql');
 
 function getDataByName(req,res){
 
-	 var con = mysql.createConnection({
-		 host: "localhost",
-		 user: "tzannetos",
-                 password: "#tzannetos1",
-		 database:"softeng2020demo"
-	 });
+	var con = mysql.createConnection({
+		host: "localhost",
+		user: "tzannetos",
+		password: "#tzannetos1",
+		database:"softeng2020demo"
+	});
+	
 	con.connect(function(err) {
 		if (err) throw err;
 		console.log("Connected!");
