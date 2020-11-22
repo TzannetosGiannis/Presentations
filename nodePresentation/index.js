@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express();
 const port = 8000;
+var path = require('path');
 
 
 
@@ -12,7 +13,7 @@ app.listen(port, () => {
 
 
 app.get('/', (req, res) => {
-  res.send('Hello World!');
+  res.sendFile(path.join(__dirname + '/index.html'));
 });
 
 
